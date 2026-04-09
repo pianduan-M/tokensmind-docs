@@ -3,7 +3,7 @@ title: OpenAI Codex
 icon: code
 ---
 
-> Use Codex through the Onetoken API
+> Use Codex through the Tokensmind API
 
 ## Install
 
@@ -24,17 +24,17 @@ npm install -g @openai/codex
 1. Edit `~/.codex/config.toml`:
 
 ```toml theme={null}
-profile = "OneToken"
+profile = "Tokensmind"
 
-[model_providers.OneToken]
-name = "OneToken"
-base_url = "https://onetoken.one/v1"
+[model_providers.Tokensmind]
+name = "Tokensmind"
+base_url = "https://tokensmind.ai/v1"
 personality = "pragmatic"
 wire_api = "responses"
 
-[profiles.OneToken]
+[profiles.Tokensmind]
 model = "gpt-5.2"
-model_provider = "OneToken"
+model_provider = "Tokensmind"
 model_reasoning_effort = "high"
 ```
 
@@ -42,7 +42,7 @@ model_reasoning_effort = "high"
 
 ```json theme={null}
 {
-  "OPENAI_API_KEY": "Onetoken_API_KEY"
+  "OPENAI_API_KEY": "Tokensmind_API_KEY"
 }
 ```
 
@@ -52,7 +52,7 @@ model_reasoning_effort = "high"
 
 <img src="/images/codex/1.png" alt="Codex 1" width="2072" height="1374" data-path="public/cn/codex-1.png" />
 
-2. Pick **OneToken** from presets.
+2. Pick **Tokensmind** from presets.
 
 <img src="/images/codex/2.png" alt="Codex 2" width="2072" height="1374" data-path="public/cn/codex-2.png" />
 
@@ -60,7 +60,7 @@ model_reasoning_effort = "high"
 
 <img src="/images/codex/3.png" alt="Codex 3" width="2072" height="1374" data-path="public/cn/codex-3.png" />
 
-4. Select **OneToken** on the home screen → **Enable**.
+4. Select **Tokensmind** on the home screen → **Enable**.
 
 <img src="/images/codex/4.png" alt="Codex 4" width="2072" height="1374" data-path="public/cn/codex-4.png" />
 

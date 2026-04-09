@@ -10,7 +10,7 @@ icon: image
 ### 📌 基础信息
 
 - **接口地址**: `POST /v1/images/generations/`
-- **请求域名**: `https://onetoken.one`
+- **请求域名**: `https://tokensmind.ai`
 - **认证方式**: `Bearer Token`
 - **内容类型**: `application/json`
 

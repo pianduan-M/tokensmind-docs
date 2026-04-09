@@ -22,7 +22,7 @@ Cursor lets you bring your own API key so you can spend your own quota (e.g. Dee
 
 3. In the sidebar or window, open **General** or **Models**.
 4. Enable the OpenAI API key field and paste your token.
-5. Enable **Override OpenAI Base URL** and set `https://onetoken.one/v1`
+5. Enable **Override OpenAI Base URL** and set `https://tokensmind.ai/v1`
 
 <img src="/images/cursor/2.png" />
 
@@ -55,10 +55,10 @@ Names **must not** collide with Cursor’s built-ins—pick models from the **Cu
 
 ## Troubleshooting
 
-| Symptom | Fix |
-| :-- | :-- |
-| **Verify failed** | Base URL should end at `/v1`, not `/chat/completions`. |
-| **No reply** | Check third-party balance / quota. |
+| Symptom             | Fix                                                                        |
+| :------------------ | :------------------------------------------------------------------------- |
+| **Verify failed**   | Base URL should end at `/v1`, not `/chat/completions`.                     |
+| **No reply**        | Check third-party balance / quota.                                         |
 | **Built-in models** | With BYOK, Cursor usually bills your key first, not the subscription pool. |
 
 ---

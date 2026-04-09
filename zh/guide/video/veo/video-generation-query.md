@@ -52,7 +52,7 @@ curl -X GET "https://api.your-server.com/v1/video/generations/task_LK8YADXPxyoGM
     "metadata": null,
     "status": "succeeded", // 任务状态
     "task_id": "task_**",
-    "url": "https://onetoken.one/v1/videos/task_MQKsdsosLYRreob4Z4NzTFxZKtSoVRWZ/content" // 公网地址
+    "url": "https://tokensmind.ai/v1/videos/task_MQKsdsosLYRreob4Z4NzTFxZKtSoVRWZ/content" // 公网地址
   }
 }
 ```

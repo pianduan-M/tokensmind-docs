@@ -19,9 +19,9 @@ Poll by `task_id` for status and the playable URL when the job succeeds.
 
 ### Path
 
-| Field | Type | Required | Description |
-| :-- | :-- | :-- | :-- |
-| **task_id** | `string` | **Yes** | From job creation. |
+| Field       | Type     | Required | Description        |
+| :---------- | :------- | :------- | :----------------- |
+| **task_id** | `string` | **Yes**  | From job creation. |
 
 ---
 
@@ -52,7 +52,7 @@ curl -X GET "https://api.your-server.com/v1/video/generations/task_LK8YADXPxyoGM
     "metadata": null,
     "status": "succeeded",
     "task_id": "task_**",
-    "url": "https://onetoken.one/v1/videos/task_MQKsdsosLYRreob4Z4NzTFxZKtSoVRWZ/content"
+    "url": "https://tokensmind.ai/v1/videos/task_MQKsdsosLYRreob4Z4NzTFxZKtSoVRWZ/content"
   }
 }
 ```

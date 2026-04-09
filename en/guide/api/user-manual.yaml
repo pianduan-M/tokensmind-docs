@@ -1,14 +1,14 @@
 openapi: 3.0.1
 info:
-  title: Onetoken API
+  title: Tokensmind API
   description: |-
-    Onetoken provides API access to many AI models via an OpenAI-compatible surface—you can swap the official SDK base URL and keep coding.
+    Tokensmind provides API access to many AI models via an OpenAI-compatible surface—you can swap the official SDK base URL and keep coding.
 
-    Get an API key: [https://onetoken.one/console/token](https://onetoken.one/console/token)
-    Browse models: [https://onetoken.one/pricing](https://onetoken.one/pricing)
+    Get an API key: [https://tokensmind.ai/token](https://tokensmind.ai/token)
+    Browse models: [https://tokensmind.ai/pricing](https://tokensmind.ai/pricing)
   version: 1.0.0
 servers:
-  - url: https://onetoken.one/v1
+  - url: https://tokensmind.ai/v1
     description: Production
 security:
   - bearerAuth: []
@@ -29,7 +29,7 @@ paths:
               properties:
                 model:
                   type: string
-                  description: Model id—see the [model hub](https://onetoken.one/pricing)
+                  description: Model id—see the [model hub](https://tokensmind.ai/pricing)
                 messages:
                   type: array
                   description: Chat turns with role and content
@@ -124,8 +124,8 @@ paths:
             from openai import OpenAI
 
             client = OpenAI(
-                base_url="https://onetoken.one/v1",
-                api_key="Onetoken_API_KEY"
+                base_url="https://tokensmind.ai/v1",
+                api_key="Tokensmind_API_KEY"
             )
 
             completion = client.chat.completions.create(
@@ -140,8 +140,8 @@ paths:
             import OpenAI from 'openai';
 
             const openai = new OpenAI({
-              baseURL: 'https://onetoken.one/v1',
-              apiKey: 'Onetoken_API_KEY'
+              baseURL: 'https://tokensmind.ai/v1',
+              apiKey: 'Tokensmind_API_KEY'
             });
 
             async function main() {
@@ -162,8 +162,8 @@ paths:
         - lang: curl
           label: Curl
           source: |-
-            curl https://onetoken.one/v1/chat/completions \
-              -H "Authorization: Bearer Onetoken_API_KEY" \
+            curl https://tokensmind.ai/v1/chat/completions \
+              -H "Authorization: Bearer Tokensmind_API_KEY" \
               -H "Content-Type: application/json" \
               -d "{\"model\": \"gpt-3.5-turbo\",\"messages\": [{\"role\": \"user\", \"content\": \"Hello\"}]}"
 components:
@@ -172,5 +172,5 @@ components:
       type: http
       scheme: bearer
       description: >-
-        Send `Authorization: Bearer Onetoken_API_KEY`. Create keys at
-        [https://onetoken.one/token/add](https://onetoken.one/token/add)
+        Send `Authorization: Bearer Tokensmind_API_KEY`. Create keys at
+        [https://tokensmind.ai/token/add](https://tokensmind.ai/token/add)

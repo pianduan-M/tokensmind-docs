@@ -10,7 +10,7 @@ icon: brush
 ### 📌 基础信息
 
 - **接口地址**: `POST /v1/images/edits/`
-- **请求域名**: `https://onetoken.one`
+- **请求域名**: `https://tokensmind.ai`
 - **认证方式**: `Bearer Token`
 - **内容类型**: `multipart/form-data`（注意：由于涉及文件上传，须使用 Form-Data 格式）
 
@@ -47,7 +47,7 @@ icon: brush
 ### 📝 请求示例 (cURL)
 
 ```bash
-curl https://onetoken.one/v1/images/edits/ \
+curl https://tokensmind.ai/v1/images/edits/ \
   -H "Authorization: Bearer $YOUR_API_KEY" \
   -F image="@otter.png" \
   -F mask="@mask.png" \

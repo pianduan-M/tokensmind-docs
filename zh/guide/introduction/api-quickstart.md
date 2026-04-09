@@ -6,7 +6,7 @@ icon: rocket
 ## 账号注册
 
 - 💰 最低充值金额：**$1**
-- 🔗 注册链接：[点击注册](https://onetoken.one/register)
+- 🔗 注册链接：[点击注册](https://tokensmind.ai/register)
 
 ## 配置步骤
 
@@ -21,9 +21,9 @@ icon: rocket
 #### BASE_URL 可选地址
 
 ```
-https://onetoken.one
-https://onetoken.one/v1
-https://onetoken.one/v1/chat/completions
+https://tokensmind.ai
+https://tokensmind.ai/v1
+https://tokensmind.ai/v1/chat/completions
 ```
 
 > **注意**: 不同客户端可能需要使用不同的 BASE_URL，建议依次尝试以上地址
@@ -43,7 +43,7 @@ https://onetoken.one/v1/chat/completions
 
 ```json
 {
-  "base_url": "https://onetoken.one",
+  "base_url": "https://tokensmind.ai",
   "api_key": "your_token_here",
   "model": "selected_model_name"
 }

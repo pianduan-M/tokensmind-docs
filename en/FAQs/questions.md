@@ -7,9 +7,9 @@ Check here for common questions.
 
 ## 1. Models and security
 
-### Does onetoken store my API request bodies?
+### Does tokensmind store my API request bodies?
 
-- No. onetoken does not store request payloads or model responses. It only relays requests to providers and returns their responses.
+- No. tokensmind does not store request payloads or model responses. It only relays requests to providers and returns their responses.
 
 ### Why do Claude, GPT, Qwen “official apps” differ from API output?
 
@@ -48,7 +48,7 @@ Increase the client timeout. Large models can think for a long time; complex job
 
 Some tools (Cline, Claude Code, etc.) attach **hidden context or system prompts**. That still counts as tokens.
 
-So even a short user message can include long history or instructions from the **tool**, not from onetoken.
+So even a short user message can include long history or instructions from the **tool**, not from tokensmind.
 
 ### What are the API concurrency limits?
 
@@ -63,10 +63,10 @@ LLMs sample probabilistically (`temperature`, `top-p`, etc.), so token choices v
 
 ### Claude replies cut off early—why?
 
-onetoken supports two styles for Claude:
+tokensmind supports two styles for Claude:
 
-1. OpenAI Chat-compatible API  
-2. Native Anthropic API  
+1. OpenAI Chat-compatible API
+2. Native Anthropic API
 
 On the **OpenAI-compatible** path, **max_tokens defaults to 4096**. If you do not set a higher value, output stops at that cap—usually not a “bug,” just the limit.
 
@@ -99,8 +99,8 @@ Stay within the model’s maximum. If it still truncates, share the model name a
 
 Unified gateway, multiple conventions:
 
-- OpenAI-style: `https://onetoken.one/v1` (GPT and compatible models)
-- Claude forwarding: `https://onetoken.one` (Anthropic SDK-style calls)
+- OpenAI-style: `https://tokensmind.ai/v1` (GPT and compatible models)
+- Claude forwarding: `https://tokensmind.ai` (Anthropic SDK-style calls)
 
 ### What do you log?
 
@@ -119,9 +119,9 @@ Output that is false, unsupported, or fabricated.
 
 #### Causes can include
 
-- Biased or incomplete training data  
-- Overfitting  
-- Randomness in decoding  
+- Biased or incomplete training data
+- Overfitting
+- Randomness in decoding
 
 All major LLMs can hallucinate; it is not unique to one provider.
 
@@ -129,14 +129,14 @@ All major LLMs can hallucinate; it is not unique to one provider.
 
 ### How do I monitor usage?
 
-Use the onetoken console for volume, tokens, and billing. Filter by model and time window.
+Use the tokensmind console for volume, tokens, and billing. Filter by model and time window.
 
 ### When a call fails
 
 Responses include codes and messages. Typical causes:
 
-- Malformed request  
-- Model unavailable or over quota  
+- Malformed request
+- Model unavailable or over quota
 
 ### How should I manage API keys?
 
@@ -144,6 +144,6 @@ Create, revoke, and rotate keys in the console.
 
 #### Security tips
 
-- Never expose keys in public places  
-- Separate keys per project  
-- Rotate periodically  
+- Never expose keys in public places
+- Separate keys per project
+- Rotate periodically

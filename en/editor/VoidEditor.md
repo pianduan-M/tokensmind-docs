@@ -5,14 +5,14 @@ icon: code
 
 ## Third-party API setup for Void Editor
 
-Void is an open, privacy-oriented AI editor (open Cursor alternative). You can point it at any OpenAI-compatible endpoint—**DeepSeek, OpenRouter, OneAPI**, or Onetoken.
+Void is an open, privacy-oriented AI editor (open Cursor alternative). You can point it at any OpenAI-compatible endpoint—**DeepSeek, OpenRouter, OneAPI**, or Tokensmind.
 
 ---
 
 ## Prerequisites
 
-1. **API key**: [Onetoken console](https://onetoken.one/console/token)
-2. **Base URL**: e.g. `https://onetoken.one/v1`
+1. **API key**: [Tokensmind console](https://tokensmind.ai/token)
+2. **Base URL**: e.g. `https://tokensmind.ai/v1`
 3. **Model id**: e.g. `deepseek-chat`
 
 ---
@@ -53,12 +53,12 @@ Most relays speak OpenAI’s API.
 
 ## Troubleshooting
 
-| Symptom | Cause | Fix |
-| :-- | :-- | :-- |
-| **401** | Bad key | Recopy key; no spaces. |
-| **404** | Wrong path | Try adding/removing trailing `/v1`. |
-| **Timeout** | Network | Proxy / firewall; try the API URL in a browser. |
-| **Model not supported** | Typo in id | Match provider spelling exactly. |
+| Symptom                 | Cause      | Fix                                             |
+| :---------------------- | :--------- | :---------------------------------------------- |
+| **401**                 | Bad key    | Recopy key; no spaces.                          |
+| **404**                 | Wrong path | Try adding/removing trailing `/v1`.             |
+| **Timeout**             | Network    | Proxy / firewall; try the API URL in a browser. |
+| **Model not supported** | Typo in id | Match provider spelling exactly.                |
 
 ---
 

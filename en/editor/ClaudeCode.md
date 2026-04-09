@@ -3,11 +3,11 @@ title: Claude Code
 icon: code
 ---
 
-> Use Claude Code with Onetoken
+> Use Claude Code with Tokensmind
 
 ## Quickstart
 
-This guide gets Claude Code talking to Onetoken in a few minutes.
+This guide gets Claude Code talking to Tokensmind in a few minutes.
 
 ### 1. Install Claude Code
 
@@ -32,13 +32,13 @@ Requires [Node.js 18+](https://nodejs.org/en/download/)
 npm install -g @anthropic-ai/claude-code
 ```
 
-### 2. Point Claude Code at Onetoken
+### 2. Point Claude Code at Tokensmind
 
-For Anthropic-compatible access via Onetoken, set:
+For Anthropic-compatible access via Tokensmind, set:
 
-1. `ANTHROPIC_BASE_URL` → `https://onetoken.one`
-2. `ANTHROPIC_AUTH_TOKEN` → API key from [Onetoken](https://console.aihubmix.com/token)
-3. `ANTHROPIC_MODEL` → a model id from the [model list](https://onetoken.one/models)
+1. `ANTHROPIC_BASE_URL` → `https://tokensmind.ai`
+2. `ANTHROPIC_AUTH_TOKEN` → API key from [Tokensmind](https://console.aihubmix.com/token)
+3. `ANTHROPIC_MODEL` → a model id from the [model list](https://tokensmind.ai/models)
 
 <Tabs>
   <Tab title="macOS">
@@ -48,18 +48,18 @@ For Anthropic-compatible access via Onetoken, set:
     echo $SHELL
     ```
 
-    2. Append exports (replace `ONETOKEN_API_KEY`):
+    2. Append exports (replace `TOKENSMIND_API_KEY`):
 
     <CodeGroup>
       ```shellscript Zsh theme={null}
-      echo 'export ANTHROPIC_BASE_URL="https://onetoken.one"' >> ~/.zshrc
-      echo 'export ANTHROPIC_AUTH_TOKEN="ONETOKEN_API_KEY"' >> ~/.zshrc
+      echo 'export ANTHROPIC_BASE_URL="https://tokensmind.ai"' >> ~/.zshrc
+      echo 'export ANTHROPIC_AUTH_TOKEN="TOKENSMIND_API_KEY"' >> ~/.zshrc
       echo 'export ANTHROPIC_MODEL="claude-sonnet-4-5"' >> ~/.zshrc
       ```
 
       ```shellscript Bash theme={null}
-      echo 'export ANTHROPIC_BASE_URL="https://onetoken.one"' >> ~/.bash_profile
-      echo 'export ANTHROPIC_AUTH_TOKEN="ONETOKEN_API_KEY"' >> ~/.bash_profile
+      echo 'export ANTHROPIC_BASE_URL="https://tokensmind.ai"' >> ~/.bash_profile
+      echo 'export ANTHROPIC_AUTH_TOKEN="TOKENSMIND_API_KEY"' >> ~/.bash_profile
       echo 'export ANTHROPIC_MODEL="claude-sonnet-4-5"' >> ~/.bash_profile
       ```
     </CodeGroup>
@@ -87,16 +87,16 @@ For Anthropic-compatible access via Onetoken, set:
   </Tab>
 
   <Tab title="Windows">
-    In CMD or PowerShell, set Onetoken base URL and [API key](https://onetoken.one/token) as user env vars.
+    In CMD or PowerShell, set Tokensmind base URL and [API key](https://tokensmind.ai/token) as user env vars.
 
     <Tabs>
       <Tab title="CMD">
         1. Run:
 
         ```shellscript  theme={null}
-        REM Replace ONETOKEN_API_KEY
-        setx ANTHROPIC_AUTH_TOKEN "ONETOKEN_API_KEY"
-        setx ANTHROPIC_BASE_URL "https://onetoken.one"
+        REM Replace TOKENSMIND_API_KEY
+        setx ANTHROPIC_AUTH_TOKEN "TOKENSMIND_API_KEY"
+        setx ANTHROPIC_BASE_URL "https://tokensmind.ai"
         setx ANTHROPIC_MODEL "claude-sonnet-4-5"
         ```
 
@@ -113,9 +113,9 @@ For Anthropic-compatible access via Onetoken, set:
         1. Run:
 
         ```shellscript  theme={null}
-        # Replace ONETOKEN_API_KEY
-        [Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "ONETOKEN_API_KEY", [EnvironmentVariableTarget]::User)
-        [Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://onetoken.one", [EnvironmentVariableTarget]::User)
+        # Replace TOKENSMIND_API_KEY
+        [Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "TOKENSMIND_API_KEY", [EnvironmentVariableTarget]::User)
+        [Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://tokensmind.ai", [EnvironmentVariableTarget]::User)
         [Environment]::SetEnvironmentVariable("ANTHROPIC_MODEL", "claude-sonnet-4-5", [EnvironmentVariableTarget]::User)
         ```
 
@@ -178,9 +178,9 @@ export ANTHROPIC_DEFAULT_SONNET_MODEL="claude-sonnet-4-5"
 export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5"
 ```
 
-- **OPUS** — hard reasoning / architecture  
-- **SONNET** — everyday coding  
-- **HAIKU** — quick checks, search  
+- **OPUS** — hard reasoning / architecture
+- **SONNET** — everyday coding
+- **HAIKU** — quick checks, search
 
 4. **`settings.json`** (project or user home):
 
@@ -212,7 +212,7 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5"
 
 <img src="/images/claudecode/4.png" />
 
-5. Home → select **onetoken** → **Start**.
+5. Home → select **tokensmind** → **Start**.
 
 <img src="/images/claudecode/5.png" />
 
@@ -236,7 +236,7 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5"
     <img src="https://mintcdn.com/aihubmix/XPAbnoWWzjetSWAU/images/iShot_2026-03-25_11.49.37.jpg?fit=max&auto=format&n=XPAbnoWWzjetSWAU&q=85&s=3f5a87bc619bcb552eb4ed78da6527b6" alt="I Shot 2026 03 25 11 49 37" width="1940" height="1248" data-path="images/iShot_2026-03-25_11.49.37.jpg" />
 </Frame>
 
-4. Fill `claudeCode.environmentVariables` with Onetoken values.
+4. Fill `claudeCode.environmentVariables` with Tokensmind values.
 
 <Frame>
     <img src="/images/claudecode/6.png" alt="I Shot 2026 03 25 11 53 07" width="1156" height="304" data-path="images/iShot_2026-03-25_11.53.07.jpg" />

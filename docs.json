@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "onetoken docs",
+  "name": "tokensmind docs",
   "colors": {
     "primary": "#2a56dd",
     "light": "#2a56dd",
@@ -117,7 +117,9 @@
               },
               {
                 "group": "API 手册",
-                "pages": ["zh/guide/api/user-manual"]
+                "pages": [
+                  "zh/guide/api/user-manual"
+                ]
               }
             ]
           },
@@ -250,7 +252,9 @@
               },
               {
                 "group": "API manual",
-                "pages": ["en/guide/api/user-manual"]
+                "pages": [
+                  "en/guide/api/user-manual"
+                ]
               }
             ]
           },

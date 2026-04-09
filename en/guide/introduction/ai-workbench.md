@@ -3,17 +3,17 @@ title: AI workbench
 icon: star
 ---
 
-## AI workbench (OneToken account + API key)
+## AI workbench (Tokensmind account + API key)
 
-The AI workbench is a **web app** that uses your OneToken **LLM API key** to:
+The AI workbench is a **web app** that uses your Tokensmind **LLM API key** to:
 
 - **Chat** (text, multi-turn, clear context)
 - **Image generation** (text-to-image; pick models and parameters)
 - **Video generation** (text-to-video; pick models and parameters)
 
-> OneToken: **API relay** (sign up, billing, API keys, model selection).  
+> Tokensmind: **API relay** (sign up, billing, API keys, model selection).  
 > AI workbench: **browser UI** (calls with your key and shows results).  
-> Open: **https://ai.onetoken.one/**
+> Open: **https://ai.tokensmind.ai/**
 
 ---
 
@@ -21,15 +21,15 @@ The AI workbench is a **web app** that uses your OneToken **LLM API key** to:
 
 ## 1. Prerequisites
 
-- A OneToken account
-- A valid OneToken **API key**
+- A Tokensmind account
+- A valid Tokensmind **API key**
 - Balance or quota (billing varies by model)
 
 ---
 
 ## 2. Register and get an API key
 
-1. Sign up / log in on the OneToken site (follow on-page steps).
+1. Sign up / log in on the Tokensmind site (follow on-page steps).
 2. Open the console / dashboard.
 3. Create and copy your **API key**
    - Prefer separate keys per use case for rotation and revocation.
@@ -41,13 +41,13 @@ The AI workbench is a **web app** that uses your OneToken **LLM API key** to:
 
 ## 3. Log in to the workbench
 
-1. Open **https://ai.onetoken.one/**
-2. Sign in with your OneToken account (use one-click login if offered).
+1. Open **https://ai.tokensmind.ai/**
+2. Sign in with your Tokensmind account (use one-click login if offered).
 3. After login, check balance in the lower-left area.
 
 ---
 
-## 4. Bind your OneToken API key
+## 4. Bind your Tokensmind API key
 
 After you register, a key is created and tied to the workbench—open the workbench and you can start.
 
@@ -81,7 +81,7 @@ The left sidebar usually includes:
 Use the model dropdown (e.g. `gpt-5.2` in screenshots):
 
 - Stronger reasoning / long context: heavier chat models
-- Faster / cheaper: lighter models (per OneToken’s available list)
+- Faster / cheaper: lighter models (per Tokensmind’s available list)
 
 ### 6.3 Send a message
 
@@ -110,7 +110,7 @@ Use the model dropdown (e.g. `gpt-5.2` in screenshots):
 
 ### 7.2 Choose an image model
 
-Pick from models OneToken exposes.
+Pick from models Tokensmind exposes.
 
 ### 7.3 Write a prompt
 
@@ -151,7 +151,7 @@ Click **Generate** and wait for results.
 
 ### 8.2 Choose a video model
 
-Pick from models OneToken exposes.
+Pick from models Tokensmind exposes.
 
 ### 8.3 Prompt tips
 
@@ -182,7 +182,7 @@ Video jobs take longer—please wait.
 ## 9. Billing
 
 - The workbench **issues requests and shows output**.
-- **Charges** follow OneToken rules for the model and usage (tokens, image/video jobs, resolution, duration, etc.).
+- **Charges** follow Tokensmind rules for the model and usage (tokens, image/video jobs, resolution, duration, etc.).
 
 Tips:
 
@@ -202,7 +202,7 @@ Tips:
 
 - Image/video are slower—retry or wait.
 - Switch model or lower resolution, duration, or batch size.
-- Check OneToken status and balance.
+- Check Tokensmind status and balance.
 
 ### Q3: Why does “clear context” change behavior?
 
@@ -220,9 +220,9 @@ Tips:
 
 ## 12. One-minute checklist
 
-1. Sign up / log in to OneToken
+1. Sign up / log in to Tokensmind
 2. Create and copy an API key
-3. Open https://ai.onetoken.one/ and sign in
+3. Open https://ai.tokensmind.ai/ and sign in
 4. In **admin / settings**, paste the key if prompted and save
 5. In **AI chat**, pick a model and send: “Hi, write a short product blurb.”
 6. Try **AI image** and **AI video**

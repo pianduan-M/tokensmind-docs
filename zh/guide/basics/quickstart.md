@@ -5,13 +5,13 @@ icon: rocket
 
 生成 API 密钥并进行首次调用
 
-## 直接调用 Onetoken API
+## 直接调用 Tokensmind API
 
 ::: tip
-其中 `<Onetoken_API_KEY>` 替换为 [Onetoken Key](https://onetoken.one/token)，注意 `key` 的有效期和额度限制。
+其中 `<Tokensmind_API_KEY>` 替换为 [Tokensmind Key](https://tokensmind.ai/token)，注意 `key` 的有效期和额度限制。
 :::
 
-可使用的 `model` 列表，可查阅 [模型广场](https://onetoken.one/models) ，复制模型名称替换即可。
+可使用的 `model` 列表，可查阅 [模型广场](https://tokensmind.ai/models) ，复制模型名称替换即可。
 
 ::: code-group
 
@@ -20,9 +20,9 @@ import requests
 import json
 
 response = requests.post(
-    url="https://onetoken.one/v1/chat/completions",
+    url="https://tokensmind.ai/v1/chat/completions",
     headers={
-        "Authorization": "Bearer <Onetoken_API_KEY>",
+        "Authorization": "Bearer <Tokensmind_API_KEY>",
         "Content-Type": "application/json",
     },
     data=json.dumps({
@@ -38,11 +38,11 @@ response = requests.post(
 ```
 
 ```ts [JavaScript]
-// 请在 https://onetoken.one 域名下尝试，否则有浏览器跨域问题
-fetch("https://onetoken.one/v1/chat/completions", {
+// 请在 https://tokensmind.ai 域名下尝试，否则有浏览器跨域问题
+fetch("https://tokensmind.ai/v1/chat/completions", {
   method: "POST",
   headers: {
-    Authorization: "Bearer <Onetoken_API_KEY>",
+    Authorization: "Bearer <Tokensmind_API_KEY>",
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
@@ -58,8 +58,8 @@ fetch("https://onetoken.one/v1/chat/completions", {
 ```
 
 ```sh [Curl]
-curl 'https://onetoken.one/v1/chat/completions' \
-  -H 'Authorization: Bearer <Onetoken_API_KEY>' \
+curl 'https://tokensmind.ai/v1/chat/completions' \
+  -H 'Authorization: Bearer <Tokensmind_API_KEY>' \
   -H 'Content-Type: application/json' \
   -d '{
     "model": "gpt-4o-mini",
@@ -78,7 +78,7 @@ curl 'https://onetoken.one/v1/chat/completions' \
 
 ## 使用 OpenAI SDK
 
-其中 `<Onetoken_API_KEY>` 替换为 [Onetoken Key](https://onetoken.one/token)，注意 `key` 的有效期和额度限制。 可使用的 `model` 列表，可查阅 [模型广场](https://onetoken.one/models) ，复制模型名称替换即可。
+其中 `<Tokensmind_API_KEY>` 替换为 [Tokensmind Key](https://tokensmind.ai/token)，注意 `key` 的有效期和额度限制。 可使用的 `model` 列表，可查阅 [模型广场](https://tokensmind.ai/models) ，复制模型名称替换即可。
 
 ::: code-group
 
@@ -87,8 +87,8 @@ from openai import OpenAI
 import random
 
 client = OpenAI(
-    base_url="https://onetoken.one/v1",
-    api_key="<Onetoken_API_KEY>",
+    base_url="https://tokensmind.ai/v1",
+    api_key="<Tokensmind_API_KEY>",
 )
 
 completion = client.chat.completions.create(
@@ -118,8 +118,8 @@ print(completion.choices[0].message.content)
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  baseURL: "https://onetoken.one/v1",
-  apiKey: "<Onetoken_API_KEY>",
+  baseURL: "https://tokensmind.ai/v1",
+  apiKey: "<Tokensmind_API_KEY>",
 });
 
 async function main() {

@@ -13,8 +13,8 @@ Void Editor 作为一款开源、隐私优先的 AI 代码编辑器（Cursor 的
 
 在开始之前，请确保你已经准备好以下信息：
 
-1. **API Key**：从 [OneToken 平台](https://onetoken.one/console/token) 获取。
-2. **Base URL**：接口的基准地址（例如 `https://onetoken.one/v1`）。
+1. **API Key**：从 [Tokensmind 平台](https://tokensmind.ai/token) 获取。
+2. **Base URL**：接口的基准地址（例如 `https://tokensmind.ai/v1`）。
 3. **模型名称**：你需要使用的具体模型 ID（例如 `deepseek-chat`）。
 
 ---

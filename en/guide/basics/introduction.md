@@ -28,19 +28,19 @@ icon: face-smile-wink
 
 ## Feature comparison
 
-| Feature | onetokenAPI | Official API |
-| --- | --- | --- |
-| GPT-4-class models | Supported across model types | Requires account with 4.0 access |
-| Peak call speed | Supported | Often requires card binding + 48h after payment |
-| Multi-account high concurrency | Hundreds of accounts | Single-account API limits |
-| OpenAI account | No registration needed | VPN + foreign phone often required |
-| Quota validity | Never expires | Often 3-month expiry |
-| Risk control | Zero bans reported | Random bans possible |
-| Usage history | Real-time, 30-day retention | Mostly aggregate latency/usage |
-| Proxy | Not required | Must use from supported regions |
-| Billing | Discounted | List price |
-| Base URL | `https://onetoken.one` | `https://api.openai.com` |
-| Integration | Compatible with common platform APIs | N/A |
+| Feature                        | tokensmindAPI                        | Official API                                    |
+| ------------------------------ | ------------------------------------ | ----------------------------------------------- |
+| GPT-4-class models             | Supported across model types         | Requires account with 4.0 access                |
+| Peak call speed                | Supported                            | Often requires card binding + 48h after payment |
+| Multi-account high concurrency | Hundreds of accounts                 | Single-account API limits                       |
+| OpenAI account                 | No registration needed               | VPN + foreign phone often required              |
+| Quota validity                 | Never expires                        | Often 3-month expiry                            |
+| Risk control                   | Zero bans reported                   | Random bans possible                            |
+| Usage history                  | Real-time, 30-day retention          | Mostly aggregate latency/usage                  |
+| Proxy                          | Not required                         | Must use from supported regions                 |
+| Billing                        | Discounted                           | List price                                      |
+| Base URL                       | `https://tokensmind.ai`              | `https://api.openai.com`                        |
+| Integration                    | Compatible with common platform APIs | N/A                                             |
 
 ## Technical advantages
 

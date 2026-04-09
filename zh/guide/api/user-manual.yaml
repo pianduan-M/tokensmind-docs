@@ -1,14 +1,14 @@
 openapi: 3.0.1
 info:
-  title: Onetoken API
+  title: Tokensmind API
   description: |-
-    Onetoken 提供的 API 服务，支持多种 AI 模型的调用。支持 OpenAI 兼容接口，可以直接替换官方 SDK 使用。
+    Tokensmind 提供的 API 服务，支持多种 AI 模型的调用。支持 OpenAI 兼容接口，可以直接替换官方 SDK 使用。
 
-    获取 API 密钥：[https://onetoken.one/console/token](https://onetoken.one/console/token)
-    查看可用模型：[https://onetoken.one/pricing](https://onetoken.one/pricing)
+    获取 API 密钥：[https://tokensmind.ai/token](https://tokensmind.ai/token)
+    查看可用模型：[https://tokensmind.ai/pricing](https://tokensmind.ai/pricing)
   version: 1.0.0
 servers:
-  - url: https://onetoken.one/v1
+  - url: https://tokensmind.ai/v1
     description: 生产环境服务器
 security:
   - bearerAuth: []
@@ -29,7 +29,7 @@ paths:
               properties:
                 model:
                   type: string
-                  description: 要使用的模型 ID，可在 [模型广场](https://onetoken.one/pricing) 查看
+                  description: 要使用的模型 ID，可在 [模型广场](https://tokensmind.ai/pricing) 查看
                 messages:
                   type: array
                   description: 对话消息列表，包含角色和内容信息
@@ -124,8 +124,8 @@ paths:
             from openai import OpenAI
 
             client = OpenAI(
-                base_url="https://onetoken.one/v1",
-                api_key="Onetoken_API_KEY"
+                base_url="https://tokensmind.ai/v1",
+                api_key="Tokensmind_API_KEY"
             )
 
             completion = client.chat.completions.create(
@@ -140,8 +140,8 @@ paths:
             import OpenAI from 'openai';
 
             const openai = new OpenAI({
-              baseURL: 'https://onetoken.one/v1',
-              apiKey: 'Onetoken_API_KEY'
+              baseURL: 'https://tokensmind.ai/v1',
+              apiKey: 'Tokensmind_API_KEY'
             });
 
             async function main() {
@@ -162,8 +162,8 @@ paths:
         - lang: curl
           label: Curl
           source: |-
-            curl https://onetoken.one/v1/chat/completions \
-              -H "Authorization: Bearer Onetoken_API_KEY" \
+            curl https://tokensmind.ai/v1/chat/completions \
+              -H "Authorization: Bearer Tokensmind_API_KEY" \
               -H "Content-Type: application/json" \
               -d "{\"model\": \"gpt-3.5-turbo\",\"messages\": [{\"role\": \"user\", \"content\": \"你好\"}]}"
 components:
@@ -172,5 +172,5 @@ components:
       type: http
       scheme: bearer
       description: >-
-        Bearer 认证，需要在请求头中添加 Authorization: Bearer Onetoken_API_KEY，可在
-        [这里](https://onetoken.one/token/add) 获取 API 密钥
+        Bearer 认证，需要在请求头中添加 Authorization: Bearer Tokensmind_API_KEY，可在
+        [这里](https://tokensmind.ai/token/add) 获取 API 密钥

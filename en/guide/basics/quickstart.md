@@ -5,13 +5,13 @@ icon: rocket
 
 Create an API key and make your first call.
 
-## Call Onetoken API directly
+## Call Tokensmind API directly
 
 ::: tip
-Replace `<Onetoken_API_KEY>` with your [Onetoken key](https://onetoken.one/token). Mind the key’s expiry and quota limits.
+Replace `<Tokensmind_API_KEY>` with your [Tokensmind key](https://tokensmind.ai/token). Mind the key’s expiry and quota limits.
 :::
 
-For available `model` values, see the [model hub](https://onetoken.one/models) and copy the model name into your request.
+For available `model` values, see the [model hub](https://tokensmind.ai/models) and copy the model name into your request.
 
 ::: code-group
 
@@ -20,9 +20,9 @@ import requests
 import json
 
 response = requests.post(
-    url="https://onetoken.one/v1/chat/completions",
+    url="https://tokensmind.ai/v1/chat/completions",
     headers={
-        "Authorization": "Bearer <Onetoken_API_KEY>",
+        "Authorization": "Bearer <Tokensmind_API_KEY>",
         "Content-Type": "application/json",
     },
     data=json.dumps({
@@ -38,11 +38,11 @@ response = requests.post(
 ```
 
 ```ts [JavaScript]
-// Try from https://onetoken.one; other origins may hit browser CORS limits
-fetch("https://onetoken.one/v1/chat/completions", {
+// Try from https://tokensmind.ai; other origins may hit browser CORS limits
+fetch("https://tokensmind.ai/v1/chat/completions", {
   method: "POST",
   headers: {
-    Authorization: "Bearer <Onetoken_API_KEY>",
+    Authorization: "Bearer <Tokensmind_API_KEY>",
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
@@ -58,8 +58,8 @@ fetch("https://onetoken.one/v1/chat/completions", {
 ```
 
 ```sh [Curl]
-curl 'https://onetoken.one/v1/chat/completions' \
-  -H 'Authorization: Bearer <Onetoken_API_KEY>' \
+curl 'https://tokensmind.ai/v1/chat/completions' \
+  -H 'Authorization: Bearer <Tokensmind_API_KEY>' \
   -H 'Content-Type: application/json' \
   -d '{
     "model": "gpt-4o-mini",
@@ -78,7 +78,7 @@ Streaming: add `"stream": true` to the request body.
 
 ## Use the OpenAI SDK
 
-Replace `<Onetoken_API_KEY>` with your [Onetoken key](https://onetoken.one/token). For `model` names, use the [model hub](https://onetoken.one/models).
+Replace `<Tokensmind_API_KEY>` with your [Tokensmind key](https://tokensmind.ai/token). For `model` names, use the [model hub](https://tokensmind.ai/models).
 
 ::: code-group
 
@@ -87,8 +87,8 @@ from openai import OpenAI
 import random
 
 client = OpenAI(
-    base_url="https://onetoken.one/v1",
-    api_key="<Onetoken_API_KEY>",
+    base_url="https://tokensmind.ai/v1",
+    api_key="<Tokensmind_API_KEY>",
 )
 
 completion = client.chat.completions.create(
@@ -118,8 +118,8 @@ print(completion.choices[0].message.content)
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  baseURL: "https://onetoken.one/v1",
-  apiKey: "<Onetoken_API_KEY>",
+  baseURL: "https://tokensmind.ai/v1",
+  apiKey: "<Tokensmind_API_KEY>",
 });
 
 async function main() {

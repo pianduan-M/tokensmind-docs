@@ -6,7 +6,7 @@ icon: rocket
 ## Sign up
 
 - Minimum top-up: **$1**
-- Register: [Sign up](https://onetoken.one/register)
+- Register: [Sign up](https://tokensmind.ai/register)
 
 ## Setup
 
@@ -21,9 +21,9 @@ icon: rocket
 #### Optional BASE_URL values
 
 ```
-https://onetoken.one
-https://onetoken.one/v1
-https://onetoken.one/v1/chat/completions
+https://tokensmind.ai
+https://tokensmind.ai/v1
+https://tokensmind.ai/v1/chat/completions
 ```
 
 > Different clients may need different BASE_URL values—try the options above in order.
@@ -41,7 +41,7 @@ https://onetoken.one/v1/chat/completions
 
 ```json
 {
-  "base_url": "https://onetoken.one",
+  "base_url": "https://tokensmind.ai",
   "api_key": "your_token_here",
   "model": "selected_model_name"
 }

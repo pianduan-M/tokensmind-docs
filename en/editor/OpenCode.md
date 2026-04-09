@@ -11,8 +11,8 @@ OpenCode is an open-source coding assistant with flexible API wiring. Point it a
 
 ## Step 1: Gather credentials
 
-1. **API key**: [Onetoken console](https://onetoken.one/console/token)
-2. **Base URL**: e.g. `https://onetoken.one/v1`
+1. **API key**: [Tokensmind console](https://tokensmind.ai/token)
+2. **Base URL**: e.g. `https://tokensmind.ai/v1`
 3. **Model id**: e.g. `deepseek-ai/DeepSeek-V3`
 
 ---
@@ -60,18 +60,18 @@ Under **Custom Models** / **Model Map**:
 
 OpenCode can read `.env` or system env:
 
-- `OPENAI_API_BASE` — third-party base URL  
-- `OPENAI_API_KEY` — key  
+- `OPENAI_API_BASE` — third-party base URL
+- `OPENAI_API_KEY` — key
 
 ---
 
 ## Troubleshooting
 
-| Error | Likely cause | Fix |
-| :-- | :-- | :-- |
-| **Model Not Found** | Wrong model id | Match the provider list exactly. |
-| **Invalid API Key** | Bad or expired key | Regenerate; strip newlines. |
-| **Network Error** | TLS / proxy | Adjust proxy for CN relays. |
+| Error                 | Likely cause          | Fix                                 |
+| :-------------------- | :-------------------- | :---------------------------------- |
+| **Model Not Found**   | Wrong model id        | Match the provider list exactly.    |
+| **Invalid API Key**   | Bad or expired key    | Regenerate; strip newlines.         |
+| **Network Error**     | TLS / proxy           | Adjust proxy for CN relays.         |
 | **Stream Mode Error** | Streaming unsupported | Try disabling **Enable Streaming**. |
 
 ---

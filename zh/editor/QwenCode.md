@@ -3,7 +3,7 @@ title: Qwen Code
 icon: code
 ---
 
-> 利用 Onetoken 平台的任何大语言模型为 Qwen Code 提供支持。
+> 利用 Tokensmind 平台的任何大语言模型为 Qwen Code 提供支持。
 
 ## 快速配置指引：
 
@@ -20,13 +20,13 @@ qwen --version
 
 ### 2️⃣ 环境变量配置
 
-在系统环境变量中填入 Onetoken 密钥和转发地址，密钥可以在 Onetoken [「Keys」页面](https://onetoken.one/token) 生成。
+在系统环境变量中填入 Tokensmind 密钥和转发地址，密钥可以在 Tokensmind [「Keys」页面](https://tokensmind.ai/token) 生成。
 
 比如在 \~/.zshrc 中添加：
 
 ```shell theme={null}
-export OPENAI_API_KEY="your_onetoken_key"
-export OPENAI_BASE_URL="https://onetoken.one/v1"
+export OPENAI_API_KEY="your_tokensmind_key"
+export OPENAI_BASE_URL="https://tokensmind.ai/v1"
 export OPENAI_MODEL="your_model"
 ```
 
@@ -51,7 +51,7 @@ qwen
 <img src="https://mintcdn.com/aihubmix/UgvkHPDoK6o04763/public/cn/Qwen-code.png?fit=max&auto=format&n=UgvkHPDoK6o04763&q=85&s=fbf0fe0ae179a4a00c1842a068144a8d" alt="about" width="1990" height="2034" data-path="public/cn/Qwen-code.png" />
 
 <Note>
-  有网友反馈 Qwen Code 存在一定的卡壳概率，我们推荐为[密钥 ↗](https://onetoken.one/token)设置**有限额度**来规避不必要的浪费
+  有网友反馈 Qwen Code 存在一定的卡壳概率，我们推荐为[密钥 ↗](https://tokensmind.ai/token)设置**有限额度**来规避不必要的浪费
 </Note>
 
 接下来正常使用即可。

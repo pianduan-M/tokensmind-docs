@@ -3,11 +3,11 @@ title: Claude Code
 icon: code
 ---
 
-> 在 Onetoken 中使用 Claude Code
+> 在 Tokensmind 中使用 Claude Code
 
 ## 快速开始
 
-本指南将帮助您在几分钟内使用由 Onetoken 提供的 Claude Code.
+本指南将帮助您在几分钟内使用由 Tokensmind 提供的 Claude Code.
 
 ### 1. 安装 Claude Code
 
@@ -32,13 +32,13 @@ irm https://claude.ai/install.ps1 | iex
 npm install -g @anthropic-ai/claude-code
 ```
 
-### 2. 配置 Onetoken API
+### 2. 配置 Tokensmind API
 
-要通过兼容 Anthropic API 的方式来接入 Onetoken 的模型服务，需要配置以下环境变量。
+要通过兼容 Anthropic API 的方式来接入 Tokensmind 的模型服务，需要配置以下环境变量。
 
-1. 将`ANTHROPIC_BASE_URL` 设置为`https://onetoken.one`
-2. `ANTHROPIC_AUTH_TOKEN` 设置为从 [Onetoken 平台](https://console.aihubmix.com/token) 获取的 API Key
-3. `ANTHROPIC_MODEL`：设置为[模型列表](https://onetoken.one/models)中支持的模型。
+1. 将`ANTHROPIC_BASE_URL` 设置为`https://tokensmind.ai`
+2. `ANTHROPIC_AUTH_TOKEN` 设置为从 [Tokensmind 平台](https://console.aihubmix.com/token) 获取的 API Key
+3. `ANTHROPIC_MODEL`：设置为[模型列表](https://tokensmind.ai/models)中支持的模型。
 
 <Tabs>
   <Tab title="macOS">
@@ -52,16 +52,16 @@ npm install -g @anthropic-ai/claude-code
 
     <CodeGroup>
       ```shellscript Zsh theme={null}
-      # ONETOKEN_API_KEY 替换为你从 ONETOKEN 平台获取的 Key
-      echo 'export ANTHROPIC_BASE_URL="https://onetoken.one"' >> ~/.zshrc
-      echo 'export ANTHROPIC_AUTH_TOKEN="ONETOKEN_API_KEY"' >> ~/.zshrc
+      # TOKENSMIND_API_KEY 替换为你从 TOKENSMIND 平台获取的 Key
+      echo 'export ANTHROPIC_BASE_URL="https://tokensmind.ai"' >> ~/.zshrc
+      echo 'export ANTHROPIC_AUTH_TOKEN="TOKENSMIND_API_KEY"' >> ~/.zshrc
       echo 'export ANTHROPIC_MODEL="claude-sonnet-4-5"' >> ~/.zshrc
       ```
 
       ```shellscript Bash theme={null}
-      # ONETOKEN_API_KEY 替换为你从 ONETOKEN 平台获取的 Key
-      echo 'export ANTHROPIC_BASE_URL="https://onetoken.one"' >> ~/.bash_profile
-      echo 'export ANTHROPIC_AUTH_TOKEN="ONETOKEN_API_KEY"' >> ~/.bash_profile
+      # TOKENSMIND_API_KEY 替换为你从 TOKENSMIND 平台获取的 Key
+      echo 'export ANTHROPIC_BASE_URL="https://tokensmind.ai"' >> ~/.bash_profile
+      echo 'export ANTHROPIC_AUTH_TOKEN="TOKENSMIND_API_KEY"' >> ~/.bash_profile
       echo 'export ANTHROPIC_MODEL="claude-sonnet-4-5"' >> ~/.bash_profile
       ```
     </CodeGroup>
@@ -96,9 +96,9 @@ npm install -g @anthropic-ai/claude-code
         1. 在 CMD 中运行以下命令，设置环境变量。
 
         ```shellscript  theme={null}
-        REM Onetoken API Key 替换 ONETOKEN_API_KEY
-        setx ANTHROPIC_AUTH_TOKEN "ONETOKEN_API_KEY"
-        setx ANTHROPIC_BASE_URL "https://onetoken.one"
+        REM Tokensmind API Key 替换 TOKENSMIND_API_KEY
+        setx ANTHROPIC_AUTH_TOKEN "TOKENSMIND_API_KEY"
+        setx ANTHROPIC_BASE_URL "https://tokensmind.ai"
         setx ANTHROPIC_MODEL "claude-sonnet-4-5"
         ```
 
@@ -115,9 +115,9 @@ npm install -g @anthropic-ai/claude-code
         1. 在 PowerShell 中运行以下命令，设置环境变量。
 
         ```shellscript  theme={null}
-        # Onetoken API Key 替换 ONETOKEN_API_KEY
-        [Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "ONETOKEN_API_KEY", [EnvironmentVariableTarget]::User)
-        [Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://onetoken.one", [EnvironmentVariableTarget]::User)
+        # Tokensmind API Key 替换 TOKENSMIND_API_KEY
+        [Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "TOKENSMIND_API_KEY", [EnvironmentVariableTarget]::User)
+        [Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://tokensmind.ai", [EnvironmentVariableTarget]::User)
         [Environment]::SetEnvironmentVariable("ANTHROPIC_MODEL", "claude-sonnet-4-5", [EnvironmentVariableTarget]::User)
         ```
 
@@ -220,7 +220,7 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5"
 
 <img src="/images/claudecode/4.png" />
 
-5. 返回首页，在供应商列表中选择「onetoken」，点击「启动」即可使用。
+5. 返回首页，在供应商列表中选择「tokensmind」，点击「启动」即可使用。
 
 <img src="/images/claudecode/5.png" />
 
@@ -244,7 +244,7 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5"
     <img src="https://mintcdn.com/aihubmix/XPAbnoWWzjetSWAU/images/iShot_2026-03-25_11.49.37.jpg?fit=max&auto=format&n=XPAbnoWWzjetSWAU&q=85&s=3f5a87bc619bcb552eb4ed78da6527b6" alt="I Shot 2026 03 25 11 49 37" width="1940" height="1248" data-path="images/iShot_2026-03-25_11.49.37.jpg" />
 </Frame>
 
-4. 在 `claudeCode.environmentVariables` 中填入 Onetoken 相关信息。
+4. 在 `claudeCode.environmentVariables` 中填入 Tokensmind 相关信息。
 
 <Frame>
     <img src="/images/claudecode/6.png" alt="I Shot 2026 03 25 11 53 07" width="1156" height="304" data-path="images/iShot_2026-03-25_11.53.07.jpg" />
